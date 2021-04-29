@@ -1,0 +1,32 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+  - dependency-name: got
+    versions:
+    - 11.5.0
+  - dependency-name: lint-staged
+    versions:
+    - 10.2.2
+- package-ecosystem: npm
+  directory: "/gh-badges"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: svgo
+    versions:
+    - 2.0.3
+    - 2.1.0
+    - 2.2.1
+    - 2.2.2
